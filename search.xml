@@ -14,7 +14,8 @@
     <title>first</title>
     <url>/2023/04/25/first/</url>
     <content><![CDATA[<p>这是我的第一个博客。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/rzrleo/tuchuang/rzrimg/greenman.jpg"></p>
+<p><a href="https://cdn.jsdelivr.net/gh/rzrleo/tuchuang/rzrimg/flower.jpg">https://cdn.jsdelivr.net/gh/rzrleo/tuchuang/rzrimg/flower.jpg</a></p>
+<p><img src="https://cdn.jsdelivr.net/gh/rzrleo/tuchuang/rzrimg/flower.jpg"></p>
 ]]></content>
       <categories>
         <category>杂文</category>

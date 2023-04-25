@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-04-25T14:01:52.476Z</updated>
+  <updated>2023-04-25T14:15:12.214Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,16 +21,15 @@
     <link href="http://example.com/2023/04/25/first/"/>
     <id>http://example.com/2023/04/25/first/</id>
     <published>2023-04-25T12:13:46.000Z</published>
-    <updated>2023-04-25T14:01:52.476Z</updated>
+    <updated>2023-04-25T14:15:12.214Z</updated>
     
-    <content type="html"><![CDATA[<p>这是我的第一个博客。</p><p><img src="https://cdn.jsdelivr.net/gh/rzrleo/tuchuang/rzrimg/greenman.jpg"></p>]]></content>
+    <content type="html"><![CDATA[<p>这是我的第一个博客。</p><p><a href="https://cdn.jsdelivr.net/gh/rzrleo/tuchuang/rzrimg/flower.jpg">https://cdn.jsdelivr.net/gh/rzrleo/tuchuang/rzrimg/flower.jpg</a></p><p><img src="https://cdn.jsdelivr.net/gh/rzrleo/tuchuang/rzrimg/flower.jpg"></p>]]></content>
     
     
       
       
     <summary type="html">&lt;p&gt;这是我的第一个博客。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/rzrleo/tuchuang/rzrimg/greenman.jpg&quot;&gt;&lt;/p&gt;
-</summary>
+&lt;p&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh/rzrleo/tuchuang/rzrimg/flower.jpg&quot;&gt;https://cdn.jsdelivr.net/gh/rzrleo/tuchuang/rzr</summary>
       
     
     
