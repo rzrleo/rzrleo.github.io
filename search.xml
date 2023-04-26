@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>first</title>
-    <url>/first/</url>
-    <content><![CDATA[<p>这是我的第一个博客。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/rzrleo/tuchuaung/rzrimg/flower.jpg" alt="flower"></p>
-]]></content>
-  </entry>
-  <entry>
     <title>Be a Good Monster</title>
     <url>/blog-0001/</url>
     <content><![CDATA[<div style="text-align: right;">
@@ -15,13 +8,16 @@
 </div>
 
 
-
-<p>熟悉我的人知道，我以前老爱在QQ空间发一些没边的文字，但后来我觉得很幼稚，就慢慢地不发了。其实我偶尔回去看看那些文字，有些矫情得可笑，有些伤感得可怜，有些愚蠢得可爱。没必要去强求自己一瞬间就能有多么成熟，并不是不发说说就等于长大了，什么样的年龄就有什么样的文字，什么样的阅历就写什么样的内容，许多年后，再来看看，不也挺好的吗。</p>
-<p>希望这个博客能成为我寻找自我的旅途，我修炼自己的剑冢。这个博客会写生活、工作、学习、技术。</p>
-<p>然后</p>
 ]]></content>
       <categories>
         <category>杂文</category>
       </categories>
+  </entry>
+  <entry>
+    <title>first</title>
+    <url>/first/</url>
+    <content><![CDATA[<p>这是我的第一个博客。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rzrleo/tuchuaung/rzrimg/flower.jpg" alt="flower"></p>
+]]></content>
   </entry>
 </search>
