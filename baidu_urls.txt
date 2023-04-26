@@ -1,2 +1,2 @@
-http://example.com/blog-0001/
-http://example.com/first/
+https://renzaoren.love/blog-0001/
+https://renzaoren.love/first/

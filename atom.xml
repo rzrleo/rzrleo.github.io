@@ -3,11 +3,11 @@
   <title>RZR</title>
   
   <subtitle>RZR Blog</subtitle>
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://renzaoren.love/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://renzaoren.love/"/>
   <updated>2023-04-26T07:13:34.170Z</updated>
-  <id>http://example.com/</id>
+  <id>https://renzaoren.love/</id>
   
   <author>
     <name>Leo Snow</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Be a Good Monster</title>
-    <link href="http://example.com/blog-0001/"/>
-    <id>http://example.com/blog-0001/</id>
+    <link href="https://renzaoren.love/blog-0001/"/>
+    <id>https://renzaoren.love/blog-0001/</id>
     <published>2023-04-26T04:46:14.000Z</published>
     <updated>2023-04-26T07:13:34.170Z</updated>
     
@@ -41,15 +41,15 @@
     
     
     
-    <category term="杂文" scheme="http://example.com/categories/%E6%9D%82%E6%96%87/"/>
+    <category term="杂文" scheme="https://renzaoren.love/categories/%E6%9D%82%E6%96%87/"/>
     
     
   </entry>
   
   <entry>
     <title>first</title>
-    <link href="http://example.com/first/"/>
-    <id>http://example.com/first/</id>
+    <link href="https://renzaoren.love/first/"/>
+    <id>https://renzaoren.love/first/</id>
     <published>2023-04-25T12:13:46.000Z</published>
     <updated>2023-04-26T04:46:42.079Z</updated>
     
