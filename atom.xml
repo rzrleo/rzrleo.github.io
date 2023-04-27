@@ -6,7 +6,7 @@
   <link href="https://renzaoren.love/atom.xml" rel="self"/>
   
   <link href="https://renzaoren.love/"/>
-  <updated>2023-04-26T14:49:31.627Z</updated>
+  <updated>2023-04-27T05:17:42.588Z</updated>
   <id>https://renzaoren.love/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>blog-0002</title>
+    <link href="https://renzaoren.love/blog-0002/"/>
+    <id>https://renzaoren.love/blog-0002/</id>
+    <published>2023-04-27T04:13:01.000Z</published>
+    <updated>2023-04-27T05:17:42.588Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><p>简单讲, Zotero 是一款文献管理器。它可以用来存储、管理和引用文献(如书籍, 文章等)。在 Zotero 中，每条文献构成一个文献条目。</p><p>相比于其他文献管理软件， Zotero 有三大优势：</p><p>首先， Zotero 操作简单，上手快。认真读完这篇文章后，你完全可以熟练地使用 Zotero 。</p><p>其次， Zotero 是一家非营利性组织，用户无需付费即可使用，而且你可以无限制地创建文件夹。</p><p>最最重要的是， Zotero 是一款开源软件，这意味着有各种插件可以使用，而这也正是 Zotero 的强大之处。</p><span id="more"></span><h1 id="下载与注册："><a href="#下载与注册：" class="headerlink" title="下载与注册："></a>下载与注册：</h1><p>下载链接：</p><p>因为有云存储功能，所以我先注册账号。</p><h1 id="拖进来（easy）："><a href="#拖进来（easy）：" class="headerlink" title="拖进来（easy）："></a>拖进来（easy）：</h1><p>简单把一些文件拖了进来，可以看到还是很方便的。</p><p><img src="https://cdn.jsdelivr.net/gh/rzrleo/tuchuaung/rzrimg/image-20230427124953315.png" alt="image-20230427124953315"></p><h1 id="下载新文献："><a href="#下载新文献：" class="headerlink" title="下载新文献："></a>下载新文献：</h1><p>用Zotero Connector下载文献，从此变身文献收割机</p><p>我们看文献时，经常是先囤上一堆，再慢慢品味。如果我们一篇篇下载到本地，再一篇篇拖到Zotero文件夹里识别，就非常麻烦。此时我们果断安装Chrome插件Zotero Connector！</p><p>安装好之后谷歌浏览器右上角就可以添加一个点击标志：</p><p><img src="https://cdn.jsdelivr.net/gh/rzrleo/tuchuaung/rzrimg/image-20230427125642320.png" alt="image-20230427125642320"></p><p>就这样轻松的下载好了：</p><p><img src="https://cdn.jsdelivr.net/gh/rzrleo/tuchuaung/rzrimg/image-20230427125948575.png" alt="image-20230427125948575"></p><p>然后这个软件的使用就先到这里，以后看的论文多了，再慢慢学习新的开源插件应用。</p>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;前言：&quot;&gt;&lt;a href=&quot;#前言：&quot; class=&quot;headerlink&quot; title=&quot;前言：&quot;&gt;&lt;/a&gt;前言：&lt;/h1&gt;&lt;p&gt;简单讲, Zotero 是一款文献管理器。它可以用来存储、管理和引用文献(如书籍, 文章等)。在 Zotero 中，每条文献构成一个文献条目。&lt;/p&gt;
+&lt;p&gt;相比于其他文献管理软件， Zotero 有三大优势：&lt;/p&gt;
+&lt;p&gt;首先， Zotero 操作简单，上手快。认真读完这篇文章后，你完全可以熟练地使用 Zotero 。&lt;/p&gt;
+&lt;p&gt;其次， Zotero 是一家非营利性组织，用户无需付费即可使用，而且你可以无限制地创建文件夹。&lt;/p&gt;
+&lt;p&gt;最最重要的是， Zotero 是一款开源软件，这意味着有各种插件可以使用，而这也正是 Zotero 的强大之处。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="论文管理" scheme="https://renzaoren.love/categories/%E8%AE%BA%E6%96%87%E7%AE%A1%E7%90%86/"/>
+    
+    
+    <category term="Zotero" scheme="https://renzaoren.love/tags/Zotero/"/>
+    
+  </entry>
   
   <entry>
     <title>Be a Good Monster</title>
