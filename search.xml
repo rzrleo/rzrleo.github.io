@@ -27,6 +27,37 @@
       </categories>
   </entry>
   <entry>
+    <title>使用zotero来管理论文</title>
+    <url>/blog-0002/</url>
+    <content><![CDATA[<h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><p>简单讲, Zotero 是一款文献管理器。它可以用来存储、管理和引用文献(如书籍, 文章等)。在 Zotero 中，每条文献构成一个文献条目。</p>
+<p>相比于其他文献管理软件， Zotero 有三大优势：</p>
+<p>首先， Zotero 操作简单，上手快。认真读完这篇文章后，你完全可以熟练地使用 Zotero 。</p>
+<p>其次， Zotero 是一家非营利性组织，用户无需付费即可使用，而且你可以无限制地创建文件夹。</p>
+<p>最最重要的是， Zotero 是一款开源软件，这意味着有各种插件可以使用，而这也正是 Zotero 的强大之处。</p>
+<span id="more"></span>
+
+
+
+<h1 id="下载与注册："><a href="#下载与注册：" class="headerlink" title="下载与注册："></a>下载与注册：</h1><p>下载链接：</p>
+<p>因为有云存储功能，所以我先注册账号。</p>
+<h1 id="拖进来（easy）："><a href="#拖进来（easy）：" class="headerlink" title="拖进来（easy）："></a>拖进来（easy）：</h1><p>简单把一些文件拖了进来，可以看到还是很方便的。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rzrleo/tuchuaung/rzrimg/image-20230427124953315.png" alt="image-20230427124953315"></p>
+<h1 id="下载新文献："><a href="#下载新文献：" class="headerlink" title="下载新文献："></a>下载新文献：</h1><p>用Zotero Connector下载文献，从此变身文献收割机</p>
+<p>我们看文献时，经常是先囤上一堆，再慢慢品味。如果我们一篇篇下载到本地，再一篇篇拖到Zotero文件夹里识别，就非常麻烦。此时我们果断安装Chrome插件Zotero Connector！</p>
+<p>安装好之后谷歌浏览器右上角就可以添加一个点击标志：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rzrleo/tuchuaung/rzrimg/image-20230427125642320.png" alt="image-20230427125642320"></p>
+<p>就这样轻松的下载好了：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rzrleo/tuchuaung/rzrimg/image-20230427125948575.png" alt="image-20230427125948575"></p>
+<p>然后这个软件的使用就先到这里，以后看的论文多了，再慢慢学习新的开源插件应用。</p>
+]]></content>
+      <categories>
+        <category>论文管理</category>
+      </categories>
+      <tags>
+        <tag>Zotero</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>苏杭五一行</title>
     <url>/blog-0003/</url>
     <content><![CDATA[<h1 id="行程："><a href="#行程：" class="headerlink" title="行程："></a>行程：</h1><p>4.27 晚上从学校到咸阳机场</p>
@@ -39,12 +70,12 @@
 <span id="more"></span>
 
 <h1 id="消费："><a href="#消费：" class="headerlink" title="消费："></a>消费：</h1><p>爸爸：+5000</p>
-<p>交通：-856，-143，-13，-9，-350，-8，-5，-16，-37，-15，-14，-28，-50（**-1544**）</p>
-<p>住宿：-1349，+165，-103（**-1287**）</p>
-<p>饮食：-33，-32，-113，-50，-50，-122，-24，-80，-29，-98，-33，-105，-100，-15（**-934**）</p>
-<p>景区：-55，-75，-165，-122，-150, -80（**-647**）</p>
-<p>娱乐：-37，+43，+67（**+73**）</p>
-<p>总计消费：（**-4412 + 73&#x3D; -4339**）</p>
+<p>交通：-856，-143，-13，-9，-350，-8，-5，-16，-37，-15，-14，-28，-50（ <strong>-1544</strong> ）</p>
+<p>住宿：-1349，+165，-103（ **-1287 **）</p>
+<p>饮食：-33，-32，-113，-50，-50，-122，-24，-80，-29，-98，-33，-105，-100，-15（ **-934 **）</p>
+<p>景区：-55，-75，-165，-122，-150, -80（ <strong>-647</strong> ）</p>
+<p>娱乐：-37，+43，+67（ **+73 **）</p>
+<p>总计消费：（ <strong>-4412 + 73&#x3D; -4339</strong> ）</p>
 <p>剩余：<strong>661</strong></p>
 <h1 id="随想："><a href="#随想：" class="headerlink" title="随想："></a>随想：</h1><p>距离上次旅游已经过了4年了，和一个高中好友，以及两个不认识的朋友一起去苏杭旅游。这一路上并没有太尴尬，都是男生，打一晚上麻将就都熟了。结交了新朋友，逛了新地方，可能对于旅游地的一些历史文化等背景也还是没有那么深入的去了解过，但无所谓了，旅游的意义就是放松心情，放松身体的。每一天都有7分的累，所以晚上睡得非常好，几乎天天都在做梦，基本都是睡到自然醒。</p>
 <p>要说遗憾的话也有，江南那么大，还有很多值得去的地方都没来得及去的，比如西溪公园，千岛湖，嘉兴红船，京杭大运河的船上，寒山寺的夜景，庄周等等。还有就是遗憾没有能完全放开自我的去玩，就是比较平常的逛景点拍照，没有特别疯狂和放开去玩的感觉，虽然这样也挺好的。如果有可能的话，我还是希望旅游能刺激、狂热一点，比如去做一些平时不敢去做的事情，去蹦极，用无人机航拍美景，自己开车自驾游，去和其他游客交流或者搭讪，拍很帅的pose照，去逛一些冷门的景点等等。</p>
@@ -76,34 +107,52 @@
       </tags>
   </entry>
   <entry>
-    <title>使用zotero来管理论文</title>
-    <url>/blog-0002/</url>
-    <content><![CDATA[<h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><p>简单讲, Zotero 是一款文献管理器。它可以用来存储、管理和引用文献(如书籍, 文章等)。在 Zotero 中，每条文献构成一个文献条目。</p>
-<p>相比于其他文献管理软件， Zotero 有三大优势：</p>
-<p>首先， Zotero 操作简单，上手快。认真读完这篇文章后，你完全可以熟练地使用 Zotero 。</p>
-<p>其次， Zotero 是一家非营利性组织，用户无需付费即可使用，而且你可以无限制地创建文件夹。</p>
-<p>最最重要的是， Zotero 是一款开源软件，这意味着有各种插件可以使用，而这也正是 Zotero 的强大之处。</p>
+    <title>用大白话解释faster-RCNN</title>
+    <url>/blog-0004/</url>
+    <content><![CDATA[<p>我是一个对于目标检测几乎0基础的一个学生，但是最近精读的另一篇论文里有用到相关的知识，所以来啃一啃这个Faster-RCNN。我们首先要知道这个Faster-RCNN，是由RCNN到Fast-RCNN，最后才进化到Faster-RCNN的。我一开始想要去直接看Faster-RCNN的相关资料，发现读起来还是有一定困难的，后来从RCNN开始学起，一方面发现科研的过程循序渐进的妙趣，一方面也更加理解了Faster-RCNN的从无到有。</p>
+<p>近几年来，目标检测算法取得了很大的突破。比较流行的算法可以分为两类：</p>
+<p>一类是基于Region Proposal(区域推荐)的R-CNN系算法（R-CNN，Fast R-CNN, Faster R-CNN等），这些算法需要two-stage，即需要先算法产生目标候选框，也就是目标位置，然后再对候选框做分类与回归。<br>而另一类是Yolo，SSD这类one-stage算法，其仅仅使用一个卷积神经网络CNN直接预测不同目标的类别与位置。<br>也就是说，对于Two-stage来说，需要先Region Proposal。RCNN和Fast RCNN选用的就是SS算法来产生推荐的区域，之后two-stage模型改用RPN网络。</p>
 <span id="more"></span>
 
+<h1 id="RCNN"><a href="#RCNN" class="headerlink" title="RCNN"></a>RCNN</h1><p>论文：《Rich feature hierarchies for accurate object detection and semantic segmentation》2014<br>【用于精确物体定位和语义分割的丰富特征层次结构】CVPR2014</p>
+<p>作者：Ross Girshick</p>
+<p>在RCNN之前，overfeat已经是用深度学习的方法做目标检测，但RCNN是第一个可以真正可以工业级应用的解决方案。</p>
+<p>RCNN指的是Regions with CNN features，也就是带有CNN特征的区域。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rzrleo/tuchuaung/rzrimg/image-20230509214703419.png" alt="image-20230509214703419"></p>
+<p>RCNN的算法流程可以分为4步：</p>
+<p>（1）输入一张图，使用Selective Search方法生成1k-2k个候选区域（候选框）</p>
+<p>（2）用深度网络（图像分类网络）提取每一个候选区域的特征</p>
+<p>（3）特征输入每一类的SVM分类器，判别是否属于该类</p>
+<p>（4）使用回归器精细修正候选框位置</p>
+<h2 id="第一步：生成候选框"><a href="#第一步：生成候选框" class="headerlink" title="第一步：生成候选框"></a>第一步：生成候选框</h2><p>对于我来说难以理解的是第一步的SS方法，剩下的三步都还挺好理解的，但因为SS算法是传统算法，在Faster-RCNN中会被更先进的RPN网络代替，所以这里我就没有去深入了解SS算法的原理。</p>
+<p>下面是我用GPT4生成的对于SS方法的理解：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Selective Search是一种用于物体检测的区域提取算法，其核心目标是在图像中找到可能存在物体的区域，这些区域被称为候选区域或区域提议。它的基本思想是通过模拟人类视觉感知的方式，从不同的尺度、颜色、纹理等角度去发现物体。</span><br><span class="line"></span><br><span class="line">Selective Search的具体步骤如下：</span><br><span class="line"></span><br><span class="line">超像素分割：首先，通过小规模的像素聚类（例如使用快速平均颜色差分割），将图像分割成许多“超像素”区域。这些超像素区域基于颜色、纹理、亮度等特性，可以精细地划分图像。</span><br><span class="line"></span><br><span class="line">多尺度搜索：然后，通过不断的合并超像素，模拟物体在不同尺度下的存在。这个合并过程是基于一定的合并策略，比如颜色、纹理、大小和形状相似性等。</span><br><span class="line"></span><br><span class="line">多样性策略：在搜索过程中，Selective Search采取了多样性策略，即在考虑局部的最优合并之余，也会试图做一些次优的合并，以此来增加搜索的多样性，提高找到真实物体的概率。</span><br><span class="line"></span><br><span class="line">区域提议：每次合并后的超像素群体都作为一个候选区域被保存下来。在合并完成之后，会得到一系列的候选区域，这些区域就是Selective Search的输出结果，供后续的物体检测模型使用。</span><br><span class="line"></span><br><span class="line">Selective Search的优点是提取出的候选区域比较全面、覆盖广泛，且计算相对高效。但缺点是可能存在很多冗余的、重叠的区域，并且该方法本身并不具备学习的能力，无法对不同的任务进行优化。</span><br></pre></td></tr></table></figure>
 
-
-<h1 id="下载与注册："><a href="#下载与注册：" class="headerlink" title="下载与注册："></a>下载与注册：</h1><p>下载链接：</p>
-<p>因为有云存储功能，所以我先注册账号。</p>
-<h1 id="拖进来（easy）："><a href="#拖进来（easy）：" class="headerlink" title="拖进来（easy）："></a>拖进来（easy）：</h1><p>简单把一些文件拖了进来，可以看到还是很方便的。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/rzrleo/tuchuaung/rzrimg/image-20230427124953315.png" alt="image-20230427124953315"></p>
-<h1 id="下载新文献："><a href="#下载新文献：" class="headerlink" title="下载新文献："></a>下载新文献：</h1><p>用Zotero Connector下载文献，从此变身文献收割机</p>
-<p>我们看文献时，经常是先囤上一堆，再慢慢品味。如果我们一篇篇下载到本地，再一篇篇拖到Zotero文件夹里识别，就非常麻烦。此时我们果断安装Chrome插件Zotero Connector！</p>
-<p>安装好之后谷歌浏览器右上角就可以添加一个点击标志：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/rzrleo/tuchuaung/rzrimg/image-20230427125642320.png" alt="image-20230427125642320"></p>
-<p>就这样轻松的下载好了：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/rzrleo/tuchuaung/rzrimg/image-20230427125948575.png" alt="image-20230427125948575"></p>
-<p>然后这个软件的使用就先到这里，以后看的论文多了，再慢慢学习新的开源插件应用。</p>
+<p>总之通过第一步我们得到了1k-2k个候选框，这些候选框中有大量冗余重叠。</p>
+<h2 id="第二步：提取每个候选框特征"><a href="#第二步：提取每个候选框特征" class="headerlink" title="第二步：提取每个候选框特征"></a>第二步：提取每个候选框特征</h2><p>我们假设得到了2000个候选框，将所有候选框缩放到227x227大小（这里图像会有失真），然后输入到事先训练好的AlexNet CNN（随便什么CNN分类网络）获取4096维特征，最后得到了2000x4096维矩阵。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rzrleo/tuchuaung/rzrimg/image-20230509222540533.png" alt="image-20230509222540533"></p>
+<h2 id="第三步：特征分类"><a href="#第三步：特征分类" class="headerlink" title="第三步：特征分类"></a>第三步：特征分类</h2><p>假定一共有20个类别，这篇论文比较古老，所以特征分类的时候用的是20个SVM二分类器，所以我们用2000x4096维特征与SVM分类器的权值矩阵4096x20相乘，得到了2000x20维矩阵，表示2000个候选框分别在20个类别中的得分。这里用到了一个<strong>非极大值抑制</strong>去剔除掉重叠冗余的候选框，得到每一类得分最高的一些候选框。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rzrleo/tuchuaung/rzrimg/image-20230509222959038.png" alt="image-20230509222959038"></p>
+<p>新的概念：IoU（Intersection over Union）就是两个目标框的交并比，如下图：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rzrleo/tuchuaung/rzrimg/image-20230509215509255.png" alt="image-20230509215509255"></p>
+<p>说白了IoU代表两个框的重叠程度，IoU越大，两个框重叠部分越大，IoU越小，两个框重叠部分越小。</p>
+<p>NMS（非极大值抑制，Non-Maximum Suppression）剔除重叠冗余候选框的方法如下图所示，这个也很好理解，说白了就是给希望每一类的每一个物体找到最佳的候选框，并且删除相邻的重叠候选框。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rzrleo/tuchuaung/rzrimg/image-20230509224248407.png" alt="image-20230509224248407"></p>
+<h2 id="第四步：回归器修正候选框位置"><a href="#第四步：回归器修正候选框位置" class="headerlink" title="第四步：回归器修正候选框位置"></a>第四步：回归器修正候选框位置</h2><p>这里简单说一下，挺好理解的，在第三步处理后的候选框已经减少了很多，假设只有100个候选框了，我们用20个回归器对这100个候选框进行回归操作，最终得到修正后得分最高的边界框。如下图，黄色就是候选框，绿色就是真实框，红色就是你回归后得到修正的框。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rzrleo/tuchuaung/rzrimg/image-20230509225930592.png" alt="image-20230509225930592"></p>
+<h2 id="RCNN总体框架："><a href="#RCNN总体框架：" class="headerlink" title="RCNN总体框架："></a>RCNN总体框架：</h2><p>我们看到这个框架被分为4个割裂的部分，完全没有实现我们想要的端到端那样的便与训练的网络，后面的Fast-RCNN和Faster-RCNN会在这个框架基础上进一步的改进。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rzrleo/tuchuaung/rzrimg/image-20230509230129620.png" alt="image-20230509230129620"></p>
+<h2 id="RCNN存在的问题："><a href="#RCNN存在的问题：" class="headerlink" title="RCNN存在的问题："></a>RCNN存在的问题：</h2><p>1.测试速度慢（SS算法慢，提取特征过程操作冗余）</p>
+<p>2.训练速度慢且繁琐（各个部分需要分别训练）</p>
+<p>3，训练所需空间大（对于SVM和边界框回归训练）</p>
+<p>——————————————————————————————————————————</p>
+<p>等待更新</p>
 ]]></content>
       <categories>
-        <category>论文管理</category>
+        <category>目标检测</category>
       </categories>
       <tags>
-        <tag>Zotero</tag>
+        <tag>faster-RCNN</tag>
       </tags>
   </entry>
   <entry>
