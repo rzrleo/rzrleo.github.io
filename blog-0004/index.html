@@ -42,8 +42,12 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/rzrleo/tuchuaung/rzrimg/image-20230510224316661.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/rzrleo/tuchuaung/rzrimg/image-20230510224946431.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/rzrleo/tuchuaung/rzrimg/image-20230510225924729.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/rzrleo/tuchuaung/rzrimg/2fa9ffb4c67f45ba82b3c5d5ef89fc19.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/rzrleo/tuchuaung/rzrimg/image-20230514201429534.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/rzrleo/tuchuaung/rzrimg/image-20230514202451506.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/rzrleo/tuchuaung/rzrimg/image-20230514201547872.png">
 <meta property="article:published_time" content="2023-05-09T12:56:22.000Z">
-<meta property="article:modified_time" content="2023-05-10T15:03:41.085Z">
+<meta property="article:modified_time" content="2023-05-14T12:32:47.701Z">
 <meta property="article:author" content="Leo Snow">
 <meta property="article:tag" content="faster-RCNN">
 <meta name="twitter:card" content="summary">
@@ -252,7 +256,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-05-10 23:03:41" itemprop="dateModified" datetime="2023-05-10T23:03:41+08:00">2023-05-10</time>
+                <time title="修改时间：2023-05-14 20:32:47" itemprop="dateModified" datetime="2023-05-14T20:32:47+08:00">2023-05-14</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -332,7 +336,6 @@
 <h2 id="RCNN存在的问题："><a href="#RCNN存在的问题：" class="headerlink" title="RCNN存在的问题："></a>RCNN存在的问题：</h2><p>1.测试速度慢（SS算法慢，提取特征过程操作冗余）</p>
 <p>2.训练速度慢且繁琐（各个部分需要分别训练）</p>
 <p>3，训练所需空间大（对于SVM和边界框回归训练）</p>
-<p>——————————————————————————————————————————</p>
 <h1 id="Fast-RCNN"><a href="#Fast-RCNN" class="headerlink" title="Fast-RCNN"></a>Fast-RCNN</h1><p>论文：《Fast-RCNN》ICCV 2015</p>
 <p>作者：Ross Girshick</p>
 <p>同样使用VGG16作为backbone，与RCNN比较，训练时间快9倍，测试推理时间快213倍，准确率从62%提升至66%（在Pascal VOC数据集上）</p>
@@ -350,6 +353,28 @@
 <p><img src="https://cdn.jsdelivr.net/gh/rzrleo/tuchuaung/rzrimg/image-20230510224946431.png" alt="image-20230510224946431"></p>
 <h2 id="Fast-RCNN总体框架："><a href="#Fast-RCNN总体框架：" class="headerlink" title="Fast-RCNN总体框架："></a>Fast-RCNN总体框架：</h2><p>可以看到Fast-RCNN将特征提取、分类、边界框回归都已经结合到一个联通的结构了，现在速度比起RCNN虽然提升巨大，但是因为SS算法本身需要2s左右的时间，而且需要分别训练，还不能达到端到端训练的模式，所以我们还需要更进一步改进来将所有的结构都连接起来，形成端到端网络。关键就在于优化SS算法，也就是Faster-RCNN需要做到的事情。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/rzrleo/tuchuaung/rzrimg/image-20230510225924729.png" alt="image-20230510225924729"></p>
+<h1 id="Faster-RCNN"><a href="#Faster-RCNN" class="headerlink" title="Faster-RCNN"></a>Faster-RCNN</h1><p>论文：《Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks》NeurIPS 2015 </p>
+<p>作者：Ross Girshick</p>
+<p>简单来说就是：<strong>RPN+ Fast R-CNN</strong>，也就是用RPN网络来生成候选框，而不是使用SS算法来生成候选框。</p>
+<p>Faster-RCNN也可以分为3个步骤：</p>
+<p>（1）输入一张图，通过网络得到相应的特征图</p>
+<p>（2）使用RPN生成候选框，将RPN生成的候选框投影到特征图上获得相应的特征矩阵</p>
+<p>（3）将每个特征通过ROI pooling层缩放到7x7大小的特征图，接着将特征图展平通过一系列全连接层得到预测结果</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rzrleo/tuchuaung/rzrimg/2fa9ffb4c67f45ba82b3c5d5ef89fc19.png" alt="在这里插入图片描述"></p>
+<p>到这时候也就是说，我们只需要知道RPN具体原理是什么，就完全理解Faster-RCNN了。</p>
+<h2 id="Anchors锚框"><a href="#Anchors锚框" class="headerlink" title="Anchors锚框"></a>Anchors锚框</h2><p>锚框就是以一个点为中心生成K个框，作者设置了三种长宽比ratio[1:1，1:2，2:1]，具体大小可以灵活设置。如下图所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rzrleo/tuchuaung/rzrimg/image-20230514201429534.png" alt="image-20230514201429534"></p>
+<p>假设原始图片输入大小是MxN，则RPN的输入feature map大小为(M&#x2F;16)x(N&#x2F;16)。设置anchor是为了覆盖图像上各个位置各种大小的目标，那么原图上anchor的数量就是(M&#x2F;16) x (N&#x2F;16) x 9。这么多anchor，第一肯定不准确，第二肯定不能要这么多，所以后续还会淘汰一大批以及修正anchor位置，这些anchor都会用于后续的分类和回归。</p>
+<h2 id="分类与回归"><a href="#分类与回归" class="headerlink" title="分类与回归"></a>分类与回归</h2><p><img src="https://cdn.jsdelivr.net/gh/rzrleo/tuchuaung/rzrimg/image-20230514202451506.png" alt="image-20230514202451506"></p>
+<p>如上图所示，首先，在拿到conv layers的feature map后，先经过一个3x3卷积（卷积核个数为256），所以通过这个卷积层后feature map的通道数也是256，k是anchor个数（文中默认是9）。</p>
+<p>分类：</p>
+<p>(M&#x2F;16)x(N&#x2F;16)x256的特征通过1x1卷积得到(M&#x2F;16)x(N&#x2F;16)x2k的输出，因为这里是二分类判断positive和negative，所以该feature map上每个点的每个anchor对应2个值，表示目标和背景的概率。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rzrleo/tuchuaung/rzrimg/image-20230514201547872.png" alt="image-20230514201547872"></p>
+<p>回归：</p>
+<p>(M&#x2F;16)x(N&#x2F;16)x256的特征通过1x1卷积得到(M&#x2F;16)x(N&#x2F;16)x4k的输出，因为这里是生成每个anchor的坐标偏移量（用于修正anchor），[tx,ty,tw,th]共4个所以是4k。注意，这里输出的是坐标偏移量，不是坐标本身，要得到修正后的anchor还要用原坐标和这个偏移量运算一下才行。</p>
+<h2 id="生成候选框"><a href="#生成候选框" class="headerlink" title="生成候选框"></a>生成候选框</h2><p>如上图Proposal层，这是RPN里最后一个步骤，输入有三个：</p>
+<p>cls层生成的(M&#x2F;16)x(N&#x2F;16)x2k向量<br>reg层生成的(M&#x2F;16)x(N&#x2F;16)x4k向量<br>im_info&#x3D;[M, N,scale_factor]<br>（1）利用reg层的偏移量，对所有的原始anchor进行修正<br>（2）利用cls层的scores，按positive socres由大到小排列所有anchors，取前topN（比如6000个）个anchors<br>（3）边界处理，把超出图像边界的positive anchor超出的部分收拢到图像边界处，防止后续RoI pooling时proposals超出边界。<br>（4）剔除尺寸非常小的positive anchor<br>（5）对剩余的positive anchors进行NMS（非极大抑制）<br>（6）最后输出一堆proposals左上角和右下角坐标值（[x1,y1,x2,y2]对应原图MxN尺度）</p>
+<p>综上所述，RPN网络总结起来其实就上面四个小标题：<br><strong>生成anchors–&gt;softmax分类器提取positive anchors–&gt;bbox regression回归positive anchors生成偏移量–&gt;生成最终Proposals</strong></p>
 
     </div>
 
@@ -480,7 +505,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#RCNN"><span class="nav-number">1.</span> <span class="nav-text">RCNN</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E6%AD%A5%EF%BC%9A%E7%94%9F%E6%88%90%E5%80%99%E9%80%89%E6%A1%86"><span class="nav-number">1.1.</span> <span class="nav-text">第一步：生成候选框</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5%EF%BC%9A%E6%8F%90%E5%8F%96%E6%AF%8F%E4%B8%AA%E5%80%99%E9%80%89%E6%A1%86%E7%89%B9%E5%BE%81"><span class="nav-number">1.2.</span> <span class="nav-text">第二步：提取每个候选框特征</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%89%E6%AD%A5%EF%BC%9A%E7%89%B9%E5%BE%81%E5%88%86%E7%B1%BB"><span class="nav-number">1.3.</span> <span class="nav-text">第三步：特征分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E5%9B%9B%E6%AD%A5%EF%BC%9A%E5%9B%9E%E5%BD%92%E5%99%A8%E4%BF%AE%E6%AD%A3%E5%80%99%E9%80%89%E6%A1%86%E4%BD%8D%E7%BD%AE"><span class="nav-number">1.4.</span> <span class="nav-text">第四步：回归器修正候选框位置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#RCNN%E6%80%BB%E4%BD%93%E6%A1%86%E6%9E%B6%EF%BC%9A"><span class="nav-number">1.5.</span> <span class="nav-text">RCNN总体框架：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#RCNN%E5%AD%98%E5%9C%A8%E7%9A%84%E9%97%AE%E9%A2%98%EF%BC%9A"><span class="nav-number">1.6.</span> <span class="nav-text">RCNN存在的问题：</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Fast-RCNN"><span class="nav-number">2.</span> <span class="nav-text">Fast-RCNN</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Fast-RCNN%E6%80%BB%E4%BD%93%E6%A1%86%E6%9E%B6%EF%BC%9A"><span class="nav-number">2.1.</span> <span class="nav-text">Fast-RCNN总体框架：</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#RCNN"><span class="nav-number">1.</span> <span class="nav-text">RCNN</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E6%AD%A5%EF%BC%9A%E7%94%9F%E6%88%90%E5%80%99%E9%80%89%E6%A1%86"><span class="nav-number">1.1.</span> <span class="nav-text">第一步：生成候选框</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5%EF%BC%9A%E6%8F%90%E5%8F%96%E6%AF%8F%E4%B8%AA%E5%80%99%E9%80%89%E6%A1%86%E7%89%B9%E5%BE%81"><span class="nav-number">1.2.</span> <span class="nav-text">第二步：提取每个候选框特征</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%89%E6%AD%A5%EF%BC%9A%E7%89%B9%E5%BE%81%E5%88%86%E7%B1%BB"><span class="nav-number">1.3.</span> <span class="nav-text">第三步：特征分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E5%9B%9B%E6%AD%A5%EF%BC%9A%E5%9B%9E%E5%BD%92%E5%99%A8%E4%BF%AE%E6%AD%A3%E5%80%99%E9%80%89%E6%A1%86%E4%BD%8D%E7%BD%AE"><span class="nav-number">1.4.</span> <span class="nav-text">第四步：回归器修正候选框位置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#RCNN%E6%80%BB%E4%BD%93%E6%A1%86%E6%9E%B6%EF%BC%9A"><span class="nav-number">1.5.</span> <span class="nav-text">RCNN总体框架：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#RCNN%E5%AD%98%E5%9C%A8%E7%9A%84%E9%97%AE%E9%A2%98%EF%BC%9A"><span class="nav-number">1.6.</span> <span class="nav-text">RCNN存在的问题：</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Fast-RCNN"><span class="nav-number">2.</span> <span class="nav-text">Fast-RCNN</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Fast-RCNN%E6%80%BB%E4%BD%93%E6%A1%86%E6%9E%B6%EF%BC%9A"><span class="nav-number">2.1.</span> <span class="nav-text">Fast-RCNN总体框架：</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Faster-RCNN"><span class="nav-number">3.</span> <span class="nav-text">Faster-RCNN</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Anchors%E9%94%9A%E6%A1%86"><span class="nav-number">3.1.</span> <span class="nav-text">Anchors锚框</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E7%B1%BB%E4%B8%8E%E5%9B%9E%E5%BD%92"><span class="nav-number">3.2.</span> <span class="nav-text">分类与回归</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%9F%E6%88%90%E5%80%99%E9%80%89%E6%A1%86"><span class="nav-number">3.3.</span> <span class="nav-text">生成候选框</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
